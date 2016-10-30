@@ -1,0 +1,6 @@
+<div class="container">
+	<artist-list *ngIf="state==='artist-list'" (artistSelect)="showArtistDetail($event)">
+	</artist-list>
+	<artist-detail *ngIf="state==='artist-detail'" [artistId]="selectedArtistId">
+	</artist-detail>
+</div>
